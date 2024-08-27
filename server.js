@@ -13,7 +13,8 @@ const app = express()
 const port = process.env.PORT || 8080;
 
 //middlewares
-app.use(cors());
+const cors = require('cors');
+app.use(cors({ origin: 'https://www.ecommerce-client-mu-six.vercel.app.com' }));
 app.use(express.json())
 app.use(morgan('dev'));
 
