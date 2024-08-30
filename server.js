@@ -16,7 +16,7 @@ const port = process.env.PORT || 8080;
 //app.use(cors());
 
 app.use(cors({
-  origin: 'https://ecommerce-server-coral-two.vercel.app', // replace with your frontend URL
+  origin: 'https://ecommerce-mern-hazel.vercel.app/', // replace with your frontend URL
   credentials: true
 }));
 app.use(express.json());
