@@ -15,10 +15,7 @@ const port = process.env.PORT || 8080;
 //middlewares
 //app.use(cors());
 
-app.use(cors({
-  origin: 'https://ecommerce-mern-hazel.vercel.app/', // replace with your frontend URL
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
