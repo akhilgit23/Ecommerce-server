@@ -13,7 +13,7 @@ const app = express()
 const port = process.env.PORT || 8080;
 
 // CORS configuration
-const allowedOrigins = ['https://ecommerce-server-coral-two.vercel.app'];
+const allowedOrigins = ['https://ecommerce-server-coral-two.vercel.app','http://localhost:3000'];
 
 const corsOptions = {
   origin: function (origin, callback) {
