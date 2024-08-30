@@ -12,21 +12,8 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 8080;
 
-// CORS configuration
-const allowedOrigins = ['https://ecommerce-server-coral-two.vercel.app','http://localhost:3000'];
-
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-};
-
 //middlewares
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
