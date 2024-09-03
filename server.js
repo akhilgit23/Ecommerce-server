@@ -13,13 +13,8 @@ const app = express()
 const port = process.env.PORT || 8080;
 
 //middlewares
-//app.use(cors());
 
-app.use(
-  cors({
-      origin: ["https://ecommerce-mern-teal.vercel.app"],
-      credentials: true,
-  }))
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
